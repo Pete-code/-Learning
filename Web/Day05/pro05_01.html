@@ -1,0 +1,36 @@
+<!-- 背景图片设置 -->
+<!-- 背景平铺-->
+<!-- 注意 要使用背景图片必须设置box 的长宽高，只是CSS的样式 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color:transparent;
+            width:1600px;
+            height:2000px; 
+            /* 背景图片位置*/
+            background-image:url("./webp.webp") ;
+            background-repeat:no-repeat;
+            /* 背景图片的位置 */
+            /* background-position:水平 垂直;
+            left center right
+            top center bottom */
+            background-position:center center;
+            /*背景图片属性的连写形式 */
+            /* background: color image repeat position  */
+            /* background: violet url("./webp.webp") no-repeat center center  ; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello Word!
+        Hello Python!
+    </div>
+</body>
+</html>

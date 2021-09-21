@@ -1,0 +1,31 @@
+<!-- CSS的层叠性 -->
+<!-- 
+    特性
+    1. 给同一个标签设置不同的样式，此时样式会层叠叠加，会作用与同一个标签
+    2.给同一个标签设置相同的样式，稀释样式会层叠叠加，最终写在最后的样式会生效
+    注意：
+    1. 当样式冲突时，只有当选择器优先级相同时，才能通过层叠判定结果
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: blueviolet;
+        }
+        .father{
+            color: crimson;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class=father>
+        Life is short ,I need python!
+    </div>
+</body>
+</html>

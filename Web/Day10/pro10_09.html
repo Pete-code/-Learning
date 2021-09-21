@@ -1,0 +1,47 @@
+<!-- 选择器的拓展 -->
+<!-- 
+    1. 链接伪类选择器
+    2. 焦点伪类选择器
+    3. 属性选择器
+ -->
+ <!-- 
+     链接伪类选择器
+    注意点：
+    1. 应该按照LV HA的顺序书写，不然有些状态不能实现（LV HA）
+    2. :hover 选择器使用最多，经常用于各种悬停的状态
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 26px;
+        }
+        /* 选中a标签未选中的状态 */
+        a:link{
+            color: palevioletred;
+        }
+        /* 选择a标签访问过的状态 */
+        a:visited{
+            color: black;
+        }
+        /* 选择鼠标悬停的状态 */
+        a:hover{
+            color: yellow;
+        }
+        /* 选择鼠标按下时的装填 */
+        a:active{
+            color: teal;
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="#"> 我是一个A标签</a>
+</body>
+</html>

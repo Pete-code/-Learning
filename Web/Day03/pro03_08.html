@@ -1,0 +1,50 @@
+<!-- 大盒子水平居中 -->
+<!-- 
+    注意点：
+    1. 直接对当前元素设置
+    2. margin: 0 auto 针对于固定大小的盒子
+ -->
+ <!-- 文本行高设置 -->
+ <!-- 
+     line-height:
+        1. 数字+px
+        2. 倍数（当前标签的font-size的倍数）
+    应用场景:
+        1. 让单行文本垂直居中表示（1. 单行文本，多行是有问题的 2. 设置为父元素的高度）
+        2. 设置为font-size取消行间距
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            margin: 0 auto
+            
+        }
+        .son{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            margin: 0 auto
+        }
+             
+    </style>
+</head>
+<body>
+
+<!-- margin0 -->
+    <div class="father">
+        <div class="son">
+            Pete
+        </div>
+
+    </div>
+</body>
+</html>

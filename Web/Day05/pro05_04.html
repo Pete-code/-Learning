@@ -1,0 +1,38 @@
+<!-- 行内块元素 -->
+<!-- 
+    display 属性值: inline-block
+    显示特点:
+        1. 一行可以显示多个
+        2. 可以设置高度
+       代表标签:
+        input textarea button select
+        特殊情况 img是行内块元素，但是chrome 显示为inline 
+ -->
+ <!-- 
+     元素显示模式的转换
+     语法：
+
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            /*转化为块元素  */
+            /* display: block; */
+            /* 转化为行内块元素 */
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#"> 点击跳转</a><br>
+    <a href="#"> 点击跳转</a><br>
+    <a href="#"> 点击跳转</a><br>
+    <a href="#"> 点击跳转</a><br>
+</body>
+</html>

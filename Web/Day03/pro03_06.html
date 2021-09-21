@@ -1,0 +1,65 @@
+<!-- 字体和文本样式 -->
+<!-- 
+    字体大小
+    属性名: fond-size
+    取值:数值px
+    注意，
+    1. Google默认为16px
+    2. 单位需要设置，否则可能为无效的
+    字体粗细
+    属性名:font-weight
+    属性值: 正常:normal 加粗:bold
+                400         700
+    注意:
+    1. 不是所有字体都有所有取值
+    2. 在实际开发中正常和加粗最为常用
+    字体样式(用于控制字体是否倾斜)
+    属性名:font-style
+    属性值:
+    正常:normal
+    倾斜:italic
+    字体系列
+    font-family
+    1. 如果字体名称有多个单词，尽量用引号包裹起来
+    2. 字体系列不要用引号包裹起来
+    3. 开发时，尽量用常见的字体
+    样式的层叠问题:
+    问题: 给同一个标签设置了相同的属性，样式会重叠，此时样式会被覆盖，最后的生效
+    font 相关属性的连写
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 16px;
+            font-weight:bold;
+            font-style:italic;
+            font-family: Comic Sans MS,Georgia,宋体,隶书,微软雅黑,楷体,sans-serif;
+            /* 一般最后会填写一个字体系列 */
+        }
+    </style>
+    <!-- <style>
+        p{
+             /*
+             连写要求
+             1. 顺序要求： style weight size family
+             swsf
+             2. 省略要求 前两个属性可以省略，后两个属性不能省略
+             3. 省略取值，相当于取了默认值
+              */
+              font:italic  700 30px scroll-serif;
+        }
+    </style> -->
+</head>
+<body>
+    <p>我是一个p标签 I love coding</p>
+    <a href="https://www.runoob.com/css/css-font.html">字体系列</a><br>
+    <a href="https://blog.csdn.net/dw1067061570/article/details/52599672">英文字体web样式推荐</a>
+</body>
+</html>

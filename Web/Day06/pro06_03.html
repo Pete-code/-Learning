@@ -1,0 +1,60 @@
+<!-- CSS三大特性 -->
+<!-- 优先级 -->
+<!-- 
+    优先级的特性:
+    继承<通配符选择器<类选择器<id选择器<行内样式<!important
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* !important */
+        p{
+            color: fuchsia !important;
+        }
+        /* id 选择器 */
+        #one{
+            color: cyan;
+        }
+        /* 类选择器 */
+        .son{
+            color: rgb(48, 25, 6);
+        }
+        /* 标签选择器 */
+        p{
+            color: chartreuse;
+        }
+        /* 通配符选择器 */
+        *{
+            color: cadetblue;
+        }
+        .father{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p class="son" id="one" style="color: darkmagenta;">
+            实验代码
+        </p>
+    </div>
+</body>
+</html>
+<!-- 
+    注意点：
+    1.!important 的位置
+    2. !important不能提升继承的优先级，只要是继承优先级最低
+    3. 实际开发中不建议使用!important
+ -->
+ <!-- 
+     复合选择器权重叠加
+     1. 权重叠加计算公式
+
+  -->
+ 

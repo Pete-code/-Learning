@@ -1,0 +1,45 @@
+<!-- 
+    垂直方向对齐属性
+
+    vertical-align
+    属性值:
+        baseline 默认基线对齐
+        top 顶部对齐
+        middle 中部对齐
+        bottom 底部对齐
+    注意: 只争对于行内元素或者行内块元素，对块元素没有作用
+          行内块元素 行内元素 默认基线对齐
+    应用场景:
+        1. 文本框与表单按钮之间无法对齐的问题
+        2. input 标签与img 标签无法对齐的问题
+        3. div中的文本框无法贴顶的问题
+        4. div标签不设置高度，有img标签撑开，此时img标签下面会存在额外的间隙
+        5. 配合line-height使用， 使img元素垂直居中
+
+        注意点:
+        学习浮动以后，不推荐使用行内块元素使div在一行中对齐，因为可能会出现垂直对齐问题
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         .blue{
+             background-color: skyblue;
+             width: 200px;
+             height: 200px;
+             display: inline-block;
+             vertical-align: bottom;
+         }
+         
+     </style>
+ </head>
+ <body>
+     <div class="blue">
+     </div>
+      <span>I believe you hello python hello world </span>
+ </body>
+ </html>

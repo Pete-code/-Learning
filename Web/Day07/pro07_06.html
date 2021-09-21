@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div{
+             height: 400px;
+             background-color:blueviolet;
+             margin-top: 100px;
+        }
+        span{
+            margin-left: 100px;
+            padding-top: 100px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        行内元素的margin和padding无效的情况
+        场景:给行内元素设置margin和padding是
+        结果:
+            1. 水平方向的margin和padding布局中有效
+            2. 垂直方向中的padding布局中无效
+     -->   
+     <div>
+     </div> 
+     <div>
+         <span>
+             我是一个span标签
+         </span>
+         <span>我是一个span标签 </span>
+         <span>我是一个span标签 </span>
+     </div>
+</body>
+</html>

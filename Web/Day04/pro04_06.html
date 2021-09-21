@@ -1,0 +1,43 @@
+ <!--element选择器  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. 生成普通标签 -->
+    <div></div>
+    <p></p>
+    <!-- 2. 生成div标签+类名 .+类名 -->
+    <div class=""></div>
+    <div class="red"></div>
+    <div class="father"></div>
+    <!-- 3. 生成div标签+id #+id -->
+    <div id="one"></div>
+    <!-- 4. 生成指定标签+类名+id属性 类似于交集选择器的语法 -->
+    <p class="red" id="one"></p>
+    <!-- 5. 生出子代标签，类似于子代选择器 的语法 -->
+     <ul>
+         <li></li>
+     </ul>
+     <div class="father">
+         <div class="son"></div>
+     </div>
+     <!-- 6. 生成内部文本，大括号ul>li{我是li中的内容} -->
+     <div>
+         <li>Pete come on</li>
+     </div>
+     <!-- 7. 同时创建多个标签： *个数 ul>li*5 -->
+     <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+     </ul>
+</body>
+</html>

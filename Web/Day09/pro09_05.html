@@ -1,0 +1,56 @@
+<!--  -->
+<!-- 绝对定位 -->
+<!-- 
+    介绍:拼爹型的定位，相对于非静态定位的父元素进行定位移动
+    代码:position:absolute
+    特点
+    1. 需要配合方位属性实现移动
+    2. 默认相对于浏览器进行区域移动
+    3. 脱标
+    应用:
+    1. 配合绝对定位组CP
+    绝对定位相对的移动
+    1. 祖先元素中没有定位: 默认相对于浏览器相对移动
+    2. 祖先元素中有定位: 相对于最近有定位的祖先元素进行移动
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       div{
+           width: 200px;
+           height: 200px;
+       }
+       .red{
+        background-color: red;
+       }
+       .blue{
+           background-color: blue;
+           position:absolute;
+           /* 设置偏移值 */
+           bottom: 100px;
+           left: 100px;
+        
+
+          
+       }
+       .yellow{
+           background-color: yellow;
+           
+       }
+    </style>
+ </head>
+ <body>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+ </body>
+ </html>

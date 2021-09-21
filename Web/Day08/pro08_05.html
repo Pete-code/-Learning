@@ -1,0 +1,69 @@
+<!-- 网页导航标准写法 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 清除默认的margin和padding */
+        *{
+            margin:0;
+            padding: 0;
+        }
+        /* 2. 清除ul标签的小圆点 */
+        ul{
+            list-style:none;
+        }
+        /* 清除浮动的影响 */
+        .clear{
+            clear: both;
+        }
+        li{
+            /* 找到li标签，设置浮动让li标签在一行显示 */
+            float: left;
+        }
+        ul li a{
+            /* 1. 转化a 标签的类型，设置a标签的宽度，高度，背景颜色等信息 */
+            /* 方法一 */
+            display: inline-block;
+            /* 方法二 */
+            /* display: block; */
+            /* 方法三 */
+            /* float:left; */
+            width: 80px;
+            height: 50px;
+            background-color: #ffc0cb;
+            /* 设置字体等内容的信息格式 */
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+        }
+        a:hover{
+            background-color: #008000;
+            width:80px ;
+            height:50px;
+     
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 规范的导航标签书写方式 -->
+    <ul>
+        <li><a href="#">新闻1</a></li>
+        <li><a href="#">新闻2</a></li>
+        <li><a href="#">新闻3</a></li>
+        <li><a href="#">新闻4</a></li>
+        <li><a href="#">新闻5</a></li>
+        <li><a href="#">新闻6</a></li>
+        <li><a href="#">新闻7</a></li>
+        <li><a href="#">新闻8</a></li>
+        <!-- 在父元素内容的最后添加一个块级元素 -->
+        <div class="clear"></div>
+    </ul>
+</body>
+</html>

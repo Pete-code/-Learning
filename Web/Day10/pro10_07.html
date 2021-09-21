@@ -1,0 +1,70 @@
+<!-- 导航二维码显示隐藏 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .nav{
+            width: 100%;
+            height: 40px;
+            background-color: #0b0b0b;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+             text-decoration: none;
+             float: left;
+        }
+        ul li a{
+            display: inline-block;
+            text-decoration: none;
+            width: 100px;
+            height: 100%;
+            border-right: 12px bisque;
+            margin: 10px;
+            box-sizing: border-box;
+            color: bisque;
+            text-align: center;
+            line-height: 100%;
+
+        }
+        .nav .link {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        .nav .link .picture{
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-40%);
+            display: none;
+        }
+        .link:hover .picture{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">导航1</a></li>
+            <li><a href="#">导航2</a></li>
+            <li><a href="#" class="link">导航3 <img class="picture" src="https://hbimg.huabanimg.com/8476d7bc8faa6a9bc35e8a3b044d46ea69ad280e580a7-7GJybn_fw658/format/webp" alt="加载失败啦"></a> </li>
+            <li><a href="#">导航4</a></li>
+            <li><a href="#">导航5</a></li>
+
+        </ul>
+
+    </div>
+</body>
+</html>

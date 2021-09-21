@@ -1,0 +1,45 @@
+<!-- 
+    过渡
+    作用: 让元素的样式慢慢的变化， 常配合hover使用，增强网页的交互体验
+    属性名:transition
+    常见取值:
+    all 所有可以过渡的元素都能过渡
+    属性名 只有设置的属性名才能过渡，可以用逗号隔开设置多组
+
+    每一组的格式: 数字+过渡的时长（记得带上单位）
+    注意点:
+        1. 过渡需要：默认的状态与hover中的状态不相同，才能实现过渡
+        2. transition属性需要过渡的元素本身加
+        3. transition属性设置在不同状态中，效果不同
+            * 给默认的状态设置，鼠标移入移出都有过渡的效果
+            * 给hover状态设置，鼠标移入有过渡的效果，移出使没有过渡的效果
+
+    
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         div{
+             height: 300px;
+             width:300px;
+             background-color: pink;
+             transition: all 1s;
+         }
+         div:hover{
+             width: 500px;
+             height: 500px;
+             /* transition: all 1s; */
+             background-color: rgb(187, 12, 41);
+
+         }
+     </style>
+ </head>
+ <body>
+     <div></div>
+ </body>
+ </html>

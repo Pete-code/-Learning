@@ -1,0 +1,59 @@
+<!-- 设置背景图片的大小 -->
+<!-- 
+    background-size 宽度 高度;
+    数字+px 
+    百分比
+    contain
+    cover
+ -->
+<!-- 
+    background 的连写拓展
+    background: color image repeat position/size
+    注意点: 注意覆盖问题 连写与分开写的覆盖问题
+    解决：
+    1. 将单独的样式写在连写的下面
+    2. 单独的样式写在连写的里面
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 400px;
+            margin-bottom: 100px;
+            border: 10px solid black;
+            background: url('./images/1.jpg') no-repeat;
+           
+        }
+        div:nth-child(2){
+            /* 数字+px 注意会让图片拉升变形 */
+            background-size:300px 400px ;
+        }
+        /* 注意会让图片拉升变形 */
+        div:nth-child(3){
+            background-size: 100% 100%;
+        }
+        /* contain  背景图片最大的等比例缩放*/
+        div:nth-child(4)
+        {
+            background-size: contain;
+        }
+        /* cover 覆盖，将图片等比例缩放，直到刚好填满整个盒子，没有空白 所以图片可能会不完整*/
+        div:nth-child(5){
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width:400px;
+            height: 400px;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+            /* 设置定位方式 */
+            position: absolute;
+            /* 设置偏移值 */
+            left: 100px;
+            top: 200px;
+        }
+         
+    </style>
+</head>
+<body>
+    <!--
+        网页的布局方式
+        1. 标准流 
+        2. 浮动
+        3. 定位 将元素放在任意位置，解决层叠问题
+        定位的应用
+            * 定位后的元素层叠最高，可以层叠到其它盒子上4
+            * 使盒子固定在屏幕中的某一个位置
+      -->
+      <div class="red"></div>
+      <div class="blue"></div>
+</body>
+</html>

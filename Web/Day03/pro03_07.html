@@ -1,0 +1,87 @@
+<!-- 文本样式 -->
+<!-- 
+    文本属性
+    文本缩进
+    属性名: text-index
+    取值:
+        数字+px
+        数字+em(推荐 1em = 当前标签的font-size)
+    文本水平对齐方式
+    属性名：text-align:
+    取值:
+    left center right
+    注意：
+    1. 如果让文本水平居中，需要给文本的所在标签，也就是父元素设置属性
+    文本修饰属性
+    属性名: text-decoration
+    属性值: 
+    underline:下划线 
+    line-through: 删除线
+    overline:上划线
+    none:无装饰线 ,对于a 标签十分实用，可以去除超链接下的下划线
+    不同元素水平居中
+    text-align:center;
+    1. 文本水平居中
+    2. span,a标签水平居中
+    3. input img标签水平居中
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+             text-indent: 2em;
+        }
+
+        .box{
+            background-color: khaki;
+        width: 400px;
+        height: 400px;
+        text-align:center;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .line-through{
+            text-decoration: line-through;
+        }
+        .span{
+            text-align: center;
+            width: 400px;
+            height: 400px;
+            background-color: lightgreen;
+
+        }
+    </style>
+</head>
+<body>
+    <p>
+        "We've set our strategic goals for the next five years," said Eric Xu, Huawei's Rotating Chairman. "Our aim is to survive, and to do so sustainably. 
+        We'll do this by creating practical value for our customers and partners. Despite a decline in revenue from our consumer business caused by external factors,
+         we are confident that our carrier and enterprise businesses will continue to grow steadily."Xu continued, 
+        "These have been challenging times, and all of our employees have been pushing forward with extraordinary determination and strength. I want to thank every single member of the Huawei team for their incredible effort. Going forward, we continue to believe deeply in the power of digital technology to provide fresh solutions to the problems the world is facing right now. We will keep on innovating to help build a low-carbon, intelligent world."
+
+
+    </p>
+    <div class="box">
+        I love freedom
+
+    </div>
+    <div class="underline">
+        underline
+    </div>
+    <div class="line-through">
+        line-through
+    </div>
+    <div class="span">
+        <span>
+            这是一个span标签
+        </span>
+    </div>
+    
+</body>
+</html>

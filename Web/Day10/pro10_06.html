@@ -1,0 +1,46 @@
+<!-- 元素本身隐藏 -->
+<!-- 属性名 -->
+<!-- 
+    visible:hidden
+    display:none
+    两者的区别：
+        1. visibility: 隐藏元素本身，不能并且在网页中占有位置
+        2. display:none 隐藏元素本身，并且在网页中不占有位置
+        3. 隐藏元素的显示 : display:block 
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         *{
+             margin: 0;
+             padding: 0;
+         }
+         .father{
+             width: 400px;
+             height: 300px;
+             background-color: pink;
+         }
+         .son{
+             width: 100%;
+             height: 100px;
+             background-color: yellow;
+             display: none;
+         }
+         .father:hover .son{
+              display: block;
+          }
+     </style>
+ </head>
+ <body>
+     <!-- 隐藏与显示切换的案例 -->
+     <div class="father">
+         <div class="son">  
+         </div>
+     </div>
+ </body>
+ </html>

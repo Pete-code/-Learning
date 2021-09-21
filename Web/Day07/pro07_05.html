@@ -1,0 +1,44 @@
+<!-- 
+    清除浏览器默认的内边距
+    1. body标签默认设置：margin:8px 
+    2. p标签 默认上下游margin
+    3. ul标签默认有上下的margin:16px
+ -->
+ <!-- 淘宝做法 -->
+ <!-- 
+     清除默认的margin padding
+     blockquote, body, button, dd, dl, dt, fieldset, form,
+     h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+<!-- 
+
+ -->
+ <!-- 
+     京东做法
+     * {
+    margin: 0;
+    padding: 0;
+}
+  -->
+  <!-- 
+      盒子模型的折叠现象
+      1. 合并现象:
+      场景: 垂直分布的块级元素，上下margin会合并
+      结果: 取最大值
+      解决方法:
+      避免最好，只给一个盒子设定margin
+      (左右没有合并现象)
+      2. 塌陷现象
+      场景: 互相嵌套的块级元素，子元素的margin-top会作用与父元素上
+      结果: 导致父元素一起向下移动
+      解决方法:
+      1. 给父元素设置border-top或者padding-top(分隔父子元素的margin-top)
+      2. 给父元素设置overflow:hidden
+      3. 转换成行内块元素
+      4. 设置浮动
+      使子元素的margin-top与父元素的margin-top分隔
+
+   -->

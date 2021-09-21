@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        table:表格的整体
+        tr:表格的每一行
+        td:表格的单元标签
+     -->
+     <table border="1" width ="300" height ="200">
+         <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+         <tr>
+            <td>Pete</td>
+            <td>100</td>
+            <td>good</td>
+        </tr>
+         <tr>
+            <td>Jane</td>
+            <td>100</td>
+            <td>good</td>
+        </tr>
+         <tr>
+            <td>HE</td>
+            <td>100</td>
+            <td>good</td>
+        </tr>
+            
+     </table>
+     <table border="1">
+         <caption><h3>成绩单</h3></caption>
+         <tr>
+             <th>姓名</th>
+             <th>成绩</th>
+             <th>评语</th>
+         </tr>
+         <tr>
+            <td>Pete</td>
+            <td>100</td>
+            <td>good</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>100</td>
+            <td>good</td>
+        </tr>
+     </table>
+     <!-- 表格的结构标签 -->
+     <!-- 
+         thead: 表格的头部
+         tbody: 表格的主体
+         tfoot: 表格的底部
+      -->
+      <br>
+      <table border="1">
+          <h1>成绩单</h1>
+          <thead>
+            <tr>
+                <td>姓名</td>
+                <td>成绩</td>
+                <td>评语</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Pete</td>
+                <td>100</td>
+                <td>good</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+                <td>Jane</td>
+                <td>100</td>
+                <td>good</td>
+            </tr>
+          </tfoot>
+      </table>
+      <!-- 合并单元格 走上原则 -->
+      <!--跨行合并 -->
+      <!-- 跨列合并 -->
+      <table border="1" width ="300" height ="200">
+        <tr>
+           <td>姓名</td>
+           <td>成绩</td>
+           <td>评语</td>
+       </tr>
+        <tr>
+           <td>Pete</td>
+           <!-- 跨行合并 -->
+           <td rowspan="3">100</td>
+           <td>good</td>
+       </tr>
+        <tr>
+           <td>Jane</td>
+           <!-- <td>100</td> -->
+           <td>good</td>
+       </tr>
+        <tr>
+           <td>HE</td>
+           <!-- <td>100</td> -->
+           <td>good</td>
+       </tr>
+       <tr>
+           <td colspan ="3">优秀呀</td>
+       </tr>
+           
+    </table>
+</body>
+</html>
+<!-- 表格标签 -->
+ <!-- 
+    注意点：
+    1. table> tr > td 
+ -->
+ <!-- 
+     表格的属性
+     1. border 数字 边框
+     2. width  数字 表格的宽度
+     3. height 数字  表格的高度
+     但是，样式效果推荐使用CSS书写样式
+ -->
+ <!-- 
+     其他表格标签
+     caption 表格大标题 
+     th 表头单元格 表格一列的小标题
+  -->
+ <!--
+    合并单元格的注意事项
+    1. 明确合并那几个单元格
+    2. 通过左上原则，确定保留谁，删除谁
+    3. 跨行合并 rowspan 跨列合并 colspan
+    4.不能跨越结构标签合并
+  -->

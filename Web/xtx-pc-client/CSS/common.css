@@ -1,0 +1,411 @@
+/* 多网页相同重复的样式 */
+/* 版心的公共类 */
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷菜单模块 */
+.xtx-shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.xtx-shortcut nav{
+    height: 52px;
+    /* background-color: skyblue; */
+}
+.xtx-shortcut ul li{
+    float:left ;
+    line-height: 52px;
+    color: #666666;
+}
+.xtx-shortcut ul a{
+    margin:0 16px ;
+    color:  #dcdcdc;
+    font-size:14px;
+}
+.container li:last-child{
+    margin-right: 0;
+
+}
+.xtx-shortcut li:last-child a::before{
+    content: '';
+    /* background-color: red; */
+    width: 11px;
+    height: 16px;
+    display: inline-block;
+    line-height: 52px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-right: 8px;
+    background: url('../images/sprites.png') -160px -70px;
+   
+
+}
+/* 主导航模块 */
+.xtx-main-nav{
+    height: 130px;
+    /* background-color: pink; */
+    padding-top: 30px;
+    box-sizing:border-box;
+}
+.xtx-main-nav .logo{
+    width: 207px;
+    height: 70px;
+   
+    /* background-color: red; */
+    margin-left: 25px;
+}
+.xtx-main-nav .logo a{
+    display: block;
+    width:207px;
+    height:70px;
+     /* background-color: yellow; */
+    background: url(../images/logo.png); 
+    background-size: 100% 100%;
+    /* 优化操作 */
+    font-size: 0;
+}
+.xtx-main-nav nav{
+    margin-left: 40px;
+}
+.xtx-main-nav  nav li{
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 48px;
+ }
+.xtx-main-nav li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}  
+
+.xtx-main-nav .search{
+    width:172px ;
+    height:30px ;
+    position: relative;
+    margin-top: 24px;
+    margin-left: 34px;
+    background-color: yellow;
+}
+
+.xtx-main-nav .search input{
+    width:172px ;
+    height:30px ;
+    border-bottom: 2px solid #333;
+    padding-left: 31px;
+}
+.xtx-main-nav .search::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 2;
+    top: 5;
+    /* ps */
+    /* background-color: red; */
+    background:url(../images/sprites.png) -80px -70px ;
+
+}
+.xtx-main-nav .cart{
+    width: 23px;
+    height: 23px;
+    position: relative;
+    margin-top: 28px;
+    margin-left: 15px;
+    /* ps */
+    /* background-color: blue; */
+    background: url(../images/sprites.png) -120px -70px;
+}
+.xtx-main-nav .cart span{
+    width: 20px;
+    height: 15px;
+    position:absolute;
+    right:-12px;
+    top: -5px;
+    border-radius: 8px;
+    background-color: #e26237;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+
+
+
+}
+.xtx-contact{
+    height: 303px;
+ }
+.xtx-contact div{
+    width: 192px; 
+    
+    margin-top: 40px;
+    /* ps */
+    /* background-color: yellow; */
+}
+/* 联系方式 反馈 */
+.xtx-contact .feedback{
+    margin-left: 385px;
+    margin-right: 118px;
+    box-sizing: border-box;
+    margin-right: 118px;
+	
+} 
+.xtx-contact .feedback span{
+    display: block;
+    height:16px;
+    margin:0 auto;
+    font-family: PingFangSC-Regular;
+	font-size: 16px;
+	font-weight: normal;
+ 	color: #999999;
+    text-align: center;
+
+}
+.xtx-contact .picture_1{
+    margin-top: 35px;
+    margin-right: 6px;
+    width: 93px;
+    height: 92px;
+    border: solid 1px #eeeeee;
+    box-sizing: border-box;
+    /* ps */
+    /* background-color: red; */
+}
+.xtx-contact .picture_1 span{
+    display:block;
+    width:56px;
+    height: 14px;
+    /* margin-top: 5px; */
+    margin-left: 18px;
+    font-family: PingFangSC-Regular;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+
+}
+.xtx-contact .picture_1::before{
+    content: '';
+    display: inline-block;
+    width: 46px;
+    height: 35px;
+    margin-left:32px ;
+    margin-top: 22px;
+    /* ps */
+    /* background-color:red; */
+    background: url(../images/sprites.png) -250px -15px;
+    
+}
+
+.xtx-contact .picture_2{
+    margin-top: 35px;
+    width: 93px;
+    height: 92px;
+    border: solid 1px #eeeeee;
+    box-sizing: border-box;
+    /* ps */
+    /* background-color: red; */
+}
+
+.xtx-contact .picture_1 span{
+    display:block;
+    width:56px;
+    height: 14px;
+    /* margin-top: 5px; */
+    margin-left: 18px;
+    font-family: PingFangSC-Regular;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+
+}
+.xtx-contact .picture_2::before{
+    content: '';
+    display: inline-block;
+    width: 46px;
+    height: 35px;
+    margin-left:32px ;
+    margin-top: 22px;
+    /* ps */
+    /* background-color:red; */
+    background: url(../images/sprites.png) -347px -71px;
+}
+/* 联系方式 订阅 */
+.xtx-contact .subscribe  {
+    width: 193px;
+	height: 143px;
+    margin-right: 93px;
+    /* ps */
+    /* background-color: red; */
+    box-sizing: border-box;
+}
+.xtx-contact  span{
+    display: block;
+    height: 16px;
+    font-size:16px;
+    text-align: center;
+    color: #999999
+}
+.xtx-contact .picture_02_01{
+    margin-top: 35px;
+    margin-right: 6px;
+    width: 93px;
+    height: 92px;
+    border: solid 1px #eeeeee;
+    box-sizing: border-box;
+
+}
+.xtx-contact .picture_02_02{
+    margin-top: 35px;
+    
+    width: 93px;
+    height: 92px;
+    border: solid 1px #eeeeee;
+    box-sizing: border-box;
+
+}
+.xtx-contact .picture_02_01::before{
+    content: '';
+    display: inline-block;
+    width: 46px;
+    height: 35px;
+    margin-left:32px ;
+    margin-top: 22px;
+    /* ps */
+    /* background-color:red; */
+    background: url(../images/sprites.png) -205px -15px;
+}
+.xtx-contact .picture_02_02::before{
+    content: '';
+    display: inline-block;
+    width: 46px;
+    height: 35px;
+    margin-left:32px ;
+    margin-top: 22px;
+    /* ps */
+    /* background-color:red; */
+    background: url(../images/sprites.png) -349px -15px;
+}
+.xtx-contact .app{
+    width: 241px;
+	height: 156px;
+    margin-right: 109px;
+    box-sizing: border-box;
+    /* ps */
+    /* background-color: red; */
+}
+.xtx-contact .app img{
+    float:left;
+    margin-top :28px; 
+    border: solid 1px #eeeeee;
+    width: 105px;
+	height: 103px;
+    background-size:contain; 
+    
+}
+.xtx-contact .app div{
+    float: right;
+    width: 105px;
+	height: 103px;
+    /* ps */
+    /* background-color: pink; */
+}
+.xtx-contact .app button{
+    width: 103px;
+	height: 32px;
+    margin-top:18px ;
+    border-color: white;
+	background-color: #25ba9b;
+    color: #ffffff; 
+}
+.xtx-contact .tel{
+    width: 160px;
+	height: 122px;
+    /* ps */
+    /* background-color: red; */
+}
+.xtx-contact .tel .tels{
+    margin-top: 58px;
+    font-size: 22px;
+    color: #666666;
+}
+.xtx-contact .tel .time{
+    margin-top: 7px;
+    text-align: left;
+    font-size: 15px;
+    color: #999999;
+}
+/* 宣传服务模块 */
+.xtx-service{
+    height:174px ;
+    background-color: #333;
+
+}
+
+.xtx-service .container{
+    height: 173px;
+    width: 1393px;
+    /* ps */
+    /* background-color: pink; */
+    border-bottom: 1px solid #434343;
+}
+.xtx-service .container a{
+    float: left;
+    width: 33.33%;
+    height: 173px;
+    /* ps */
+    /* background-color: skyblue; */
+    text-align: center;
+    line-height: 173px;
+    font-size: 28px;
+    color:#fff ;
+   
+}
+.xtx-service .container a::before{
+    content: '';
+    display: inline-block;
+    margin-right: 19px;
+    background: url(../images/sprites.png) 0 0;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    line-height: 173px;
+    vertical-align: middle;
+    /* ps */
+    /* background-color: red; */
+}
+.xtx-service .container :nth-child(2)::before{
+    background: url(../images/sprites.png) -130px 0px;
+}
+.xtx-service .container :nth-child(3)::before{
+    background: url(../images/sprites.png) -65px 0px;
+}
+
+/* 版权信息模块 */
+.xtx-copy-right{
+    height: 168px;
+    background-color: #333;
+}
+.xtx-copy-right .container{
+    height: 168px;
+    /* ps */
+    /* background-color: pink; */
+}
+.xtx-copy-right .container{
+    text-align: center;
+    font-size: 14px;
+    color:#999;
+}
+.xtx-copy-right .container a{
+    color: #999;
+}
+.xtx-copy-right .container{
+    padding-top: 44px;
+    box-sizing: border-box;
+}
+.xtx-copy-right .container p{
+    height: 35px;
+}
+

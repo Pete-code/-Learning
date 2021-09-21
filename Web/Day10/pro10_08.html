@@ -1,0 +1,50 @@
+  <!-- 元素整体的透明度 -->
+    <!-- 
+        应用场景: 让元素整体（包括内容）一起变透明
+        属性名: opacity
+        属性值: 0到1
+        1:完全不透明
+        0: 完全透明
+     -->
+     <!-- 
+         单元格合并
+         border-collapse:collapse
+      -->
+      <!-- 
+          CSS画出一个三角形
+          实现原理:
+          利用盒子边框画出三角形
+       -->
+     
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+           <style>
+               div{
+                   /* 设计一个盒子 */
+                   width:0px;
+                   height: 0px;
+                   /* 设置不同颜色的边框 */
+                   border-top: 10px red;
+                   border-right:20px  orange;
+                   border-bottom:30px yellow;
+                   border-left:100px green;
+                   /* border-width: 10px; */
+                   border-style: solid;
+                   /*将盒子宽度设置为0 */
+                   /* 选择保留的三角形，其他的三角形颜色设置为透明色 */
+                   /* 调整不同三角形的宽度调整三角形的不同形态 */
+
+               }
+           </style>
+       </head>
+       <body>
+           <div>
+
+           </div>
+       </body>
+       </html>

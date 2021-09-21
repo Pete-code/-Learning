@@ -1,0 +1,32 @@
+<!-- 精灵图 -->
+<!-- 
+    场景: 项目中有许多的小图片，合并成一张大图片，这张大图片称之为精灵图
+    优点: 减少服务器的发送次数，减轻服务器的压力，提高页面的加载速度
+ -->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 通过pxcook 量取小图片的大小，并设置为盒子的大小 */
+           width: 24px;
+           height: 24px;
+           /* 将精灵图设置为背景图片 */
+           background: url(./images/taobao.png);
+            /*通过PxCook 测量小图片左上角的坐标，分贝取负值设置为盒子的background-position  */
+           background-position: 0 -264px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 创建一个盒子 -->
+    <div class="box">
+
+    </div>
+</body>
+</html>

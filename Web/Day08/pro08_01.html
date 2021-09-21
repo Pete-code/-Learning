@@ -1,0 +1,50 @@
+<!-- 伪元素 -->
+
+<!-- 
+    伪元素
+    1. 一般页面中的非主体内容可以使用伪元素
+    区别:
+    1. 元素:HTML设置的标签
+    2. 伪元素:由CSS设置的标签效果
+
+    种类:
+    伪元素
+    ::before  在父元素内容的最前面添加一个伪元素
+    ::after   在父元素的最后添加一个伪元素
+ -->
+ <!-- 
+        注意事项:
+        1. 必须设置content属性才能生效
+        2.伪元素默认为行内元素
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .father{
+            width:800px;
+            height: 400px;
+            background-color:blueviolet;
+        }
+        .father::after{
+            /* 伪元素必加属性 */
+            content:"这是伪元素的内容";
+            /* 伪元素默认为行内元素，若要设置高度，转化为行内块元素 */
+            display: inline-block;
+            height: 200px;
+            background-color: gold;
+            color: blueviolet;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="father">
+        这是父元素的文本
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"name": "Pete", "age": 20, "cars": {"±¦Âí": 2020, "±¼³Û": 2021, "À¼²©»ùÄá": 2022}, "hobbits": "play the violin"}

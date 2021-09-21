@@ -1,0 +1,59 @@
+<!-- 
+    子绝父绝
+    场景: 在使用子绝父相是，发现父元素已经有了自己的定位，此时直接使用子绝
+    原因:父元素已经有定位已经满足要求，如果直接盲目修改父元素的定位方式，可能会影响之前写好的内容        
+ -->
+ <!-- 子绝父相 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .father{
+            width: 400px;
+            height: 400px;
+            background-color:pink;
+            position: relative;
+             
+        }
+        .son{
+            /* 子绝父相，水平居中 */
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            position: absolute;
+            /* 子绝父相水平居中 */
+             /* 先让子元素移动父元素的一半*/
+            left: 50%;
+            /* 再让子元素移动自己的一半*/
+            /* transform: translateX(-50%); */
+            /* 注意，left margin-left 加上百分比，都是相对于父元素，transform 默认向右，且相对于自己的大小 */
+            /* 子绝父相垂直居中 */
+            /* 先让子元素移动父元素的一半 */
+            top: 50%;
+            /* 回走自己的一半 */
+            transform: translate(-50%,-50%);             
+
+          }
+    </style>
+</head>
+<body>
+    <!-- 
+        子元素绝对定位，父元素相对定位
+        应用:让子元素相对于父元素进行自由移动
+        优点:父元素相对定位，对网页布局影响小
+     -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    
+</body>
+</html>

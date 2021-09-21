@@ -1,0 +1,84 @@
+<!-- 结构伪类选择器 -->
+<!-- 
+注意点：
+    1. n为自然数
+    2. n可以为常见公式
+    3. 意思为当前元素的父元素中的第n个子元素
+ -->
+ <!-- 
+     一组区别:
+     :nth-child 直接数所有孩子中的个数
+     :nth-of-child 先通过该类型找到符合的一堆元素，然后在在这一堆元素中数数
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 找到第一个子元素，并且为li标签 */
+        li:first-child {
+            background-color:blueviolet;
+        }
+        /* 注意交集选择器既又原则 */
+        /* 2. 找到最后一个子元素，并且为li标签 */
+        li:last-child{
+            background-color:cyan;
+        }
+        /*3. 找到第三个子标签且li标签 */
+        li:nth-child(3){
+            background-color:darkmagenta;
+        }
+
+        /* 找到倒数第三个，且为li标签 */
+        li:nth-last-child(3){
+            background-color:darkslategray;
+        }
+        /* 找到偶数个li */
+        li:nth-child(2n){
+            color: gold;
+            /* even */
+        }
+        /* 找到奇数个li */
+        li:nth-child(2n+1){
+            color: hotpink;
+            /* odd */
+        }
+        /* 找到前五个 */
+        li:nth-child(-n+5){
+            font-style:italic;
+            /* n必须写在前面*/
+        }
+        /* 找到后五个 */
+        li:nth-child(n+5){
+            font-weight:bold;
+        }
+        /* :nth-of-type() */
+        /* 找到第三个li标签 */
+        /* :nth-of-type(3){
+            background-color:lightgoldenrodyellow;
+        }
+        :nth-child(4){
+            background-color:lightgoldenrodyellow;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>我是第1个li标签</li>
+            <li>我是第2个li标签</li>
+            <div> 狸猫</div>
+            <li>我是第3个li标签</li>
+            <li>我是第4个li标签</li>
+            <li>我是第5个li标签</li>
+            <li>我是第6个li标签</li>
+            <li>我是第7个li标签</li>
+            <li>我是第8个li标签</li>
+
+        </ul>
+    </div>
+</body>
+</html>

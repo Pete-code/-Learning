@@ -1,0 +1,67 @@
+<!-- 
+    二维码导航案例
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+             height:40px;
+             background-color: #333;
+        }
+        ul{
+            list-style: none;
+         }
+        ul li{
+            float:left;
+            width: 150px;
+            line-height: 40px;
+            border-right: 1px solid #000;
+            margin-right: 10px;
+            box-sizing: border-box;
+            
+           
+        }
+        ul li a{
+            text-decoration: none;
+            color: wheat;
+            display: inline-block;
+            height: 40px;
+            
+            
+        }
+        .head .app{
+            position: relative;
+        }
+        .head .app .code{
+            position:absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        a:hover{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <ul>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手投资</a></li>
+            <li class="app"><a href="#">手机微金所<img class="code" src="https://www.hk100-ultra.com/uploads/6/9/9/4/6994217/qr-code-the-full_orig.jpg" alt="加载失败啦"></a></li>
+
+            <li><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>
+</html>

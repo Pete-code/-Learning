@@ -1,0 +1,40 @@
+<!-- 光标属性 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pink{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+             /*手的样式 */
+            cursor: pointer ;
+            /* 工字型 */
+            cursor: text;
+            /* 十字型 */
+            cursor: move;
+            /* 边框圆角 一个取值，四个圆角取值相同*/
+            /*  radius 圆弧的半径 */
+            border-radius: 20px;
+            /* 两个赋值 左上/右下 左下右上 */
+            border-radius:20px 50px;
+            /* 三个取值 左上 右下 左下/右上 */
+            /*  赋值规则 : 从左上角开始，顺时针赋值，若没有赋值的，参考对角的取值 */
+            border-radius: 10px 30px 60px;
+            /* 四个取值 */
+            border-radius: 20px 0 0 20px;
+
+
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="pink"></div>
+</body>
+</html>

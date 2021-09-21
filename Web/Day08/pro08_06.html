@@ -1,0 +1,65 @@
+<!-- 清除浮动 -->
+<!-- 
+    含义:清除浮动带来的影响
+        *影响:如果子元素浮动了，就不能撑开标准列的块级元素
+    原因:
+        子元素浮动后，在标准流中就不占位置了
+    目的:
+        让父元素有相应的高度，从而不影响其他网页元素的布局
+ -->
+<!-- 清除浮动的方法 -->
+<!-- 
+    1. 给父元素设置高度，缺点，在一些特殊的布局，高度是不能被写死的，比如变化的新闻列表，京东推荐，高度必须动态变化
+    2. 额外标签法
+        * 操作：
+            1. 在父元素内容后添加一个块级元素
+            2. 给添加的块级元素设置 clear:both
+        *缺点
+            会在页面中添加额外的标签，让HTML的结构变得复杂
+    3. 单伪元素清除法
+        *操作：使用伪元素代替了额外标签
+        * 基本写法
+            .clearfix::after{
+                content:'';
+                display:block;
+                clear:both;
+            }
+        * 补充写法
+        .clearfix::after{
+                content:'.'; //防止小众浏览器不认识伪元素
+                display:block;
+                clear:both;
+                
+                height:0;
+                visibility:hidden;
+                /* 在网页中看不见伪元素*/
+            }
+        注意，在父元素的class后加上clearfix
+    4. 双伪元素清除法
+            .clearfix::before,
+            .clearfix::after{
+                content:'';
+                display:table;
+            }
+            .clearfix::after{
+                clear:both;
+            }
+            # 还可以处理margin的塌陷现象
+    5 .给父元素设置overflow:hidden
+            操作:
+                直接给父元素设置overflow:hidden
+            特点:
+                方便
+ -->
+ <!-- 
+     BFC盒子 块级格式化上下文
+     1. BFC盒子是Web页面可视CSS渲染的一部分石河子的布局过程中发生的区域，也是浮动元素与其他元素交互的区域
+     创建BFC盒子的方法
+        1. html标签是BFC盒子
+        2. 浮动元素是BFC盒子
+        3. 行内块元素是BFC盒子
+        4. overflow属性值不为visible 比如（auto，hidden）
+    BFC盒子的特点
+        1. BFC盒子会默认包住内部的元素(标准流，浮动)-> 清除浮动
+        2. BFC盒子本身与子元素之间不存在margin塌陷的现象-> 解决margin塌陷的现象
+  -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除浏览器默认的padding ,margin */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            line-height:1;
+            /* 去除行高带来的默认间隙  */
+        }
+        .box{
+            width: 500px;
+            height: 400px;
+            background-color:transparent;
+            border:1px solid #ccc;
+            /* 上 左 右 */
+            padding:41px 30px 30px 0 ;
+            box-sizing: border-box;
+
+        }
+        .box h2{
+            height: 41px;
+            background-color:transparent;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 30px;
+            padding-left: 10px;
+        }
+        .box ul{
+            list-style: none;
+        }
+        li{
+            height: 50px;
+            border-bottom:1px dashed #ccc;
+            line-height: 50px;
+            padding-left: 30px;
+        }
+        .box li a{
+            text-decoration: none;
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>最新文章/NEWS</h2>
+        <ul>
+            <li><a href="#">新闻1</a></li>
+            <li><a href="#">新闻2</a></li>
+            <li><a href="#">新闻3</a></li>
+            <li><a href="#">新闻4</a></li>
+            <li><a href="#">新闻5</a></li>
+            <li><a href="#">新闻6</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>
